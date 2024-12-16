@@ -1,4 +1,4 @@
-type mutations {
+type Mutation {
     saveCar(car: CarDetails): Car
 }
 

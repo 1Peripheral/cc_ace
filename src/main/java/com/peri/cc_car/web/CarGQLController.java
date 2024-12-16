@@ -28,7 +28,7 @@ public class CarGQLController {
     }
 
     @MutationMapping
-    public CarDTO saveCar(@Argument("CarDetails") CarDTO car) {
+    public CarDTO saveCar(@Argument("car") CarDTO car) {
         return carService.saveCar(car);
     }
 }

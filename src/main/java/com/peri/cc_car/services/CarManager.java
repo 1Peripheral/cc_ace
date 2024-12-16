@@ -36,8 +36,8 @@ public class CarManager implements CarService {
     @Override
     public CarDTO saveCar(CarDTO car) {
         Car newCar = carMapper.fromCarDTO(car);
-        carRepo.save(newCar);
+        newCar = carRepo.save(newCar);
 
-        return car;
+        return carMapper.fromCar(newCar);
     }
 }

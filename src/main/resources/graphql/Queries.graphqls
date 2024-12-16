@@ -1,0 +1,4 @@
+type Query {
+    getCars: [Car],
+    getCarsByModel(model: String): [Car]
+}

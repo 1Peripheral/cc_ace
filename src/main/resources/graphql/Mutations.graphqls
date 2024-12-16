@@ -1,0 +1,10 @@
+type mutations {
+    saveCar(car: CarDetails): Car
+}
+
+input CarDetails {
+    model: String,
+    color: String,
+    matricule: String,
+    price: Float,
+}
